@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.full-width {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    background: url(./assets/project-10bg.jpg);
+    background-size: 100% 100%;
+}
+.container {
+    width: 1280px;
+    /* height: 100vh; */
+    margin: 0 auto;
+    /* background: blue; */
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    height: 100px;
+}
+.nav-logo img{
+    width: 140px;
+}
+
+ul.menu-list {
+    display: flex;
+    list-style: none;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.nav-menubar {
+    border-bottom: 2px solid #fff;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li.nav-links {
+    padding-right: 40px;
+    /* text-align: left; */
+}
+
+.nav-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-logo i {
+    font-size: 25px;
+}
+
+.call-info {
+    margin-left: 10px;
+}
+
+.herosection-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+h1.hero-title {
+    font-size: 80px;
+    font-family: sans-serif;
+    margin-top: 50px;
+    color: #fff;
+}
+
+.learn-morebtn {
+    color: #fff;
+    font-size: 30px;
+    border: 2px solid #fff;
+    width: fit-content;
+    padding: 10px 30px;
+    border-radius: 100px;
+    font-weight: 500;
+    font-family: sans-serif;
+    margin-top: 40px;
+}
+
+.hero-rightdiv {
+    position: relative;
+    /* height: 72vh; */
+}
+
+.card-one {
+    position: absolute;
+    background: rgb(255 255 255 / 40%);
+    margin-bottom: 20px;
+    position: absolute;
+    right: 39px;
+    width: 250px;
+    padding: 10px 20px;
+    height: 135px;
+    top: -120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icons-div {
+    width: fit-content;
+    background: #fff;
+    padding: 7px 25px;
+    border-radius: 100px;
+}
+
+.icons-div i {
+    font-size: 20px;
+}
+
+.card-infodiv {
+    font-size: 16px;
+    color: #fff;
+    font-family: system-ui;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.card-one:first-child .side-line {
+    position: absolute;
+    height: 80px;
+    width: 2px;
+    background-color: #FFFFFF;
+    top: 135px;
+    left: 220px;
+}
+
+.side-line .circle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: #FFFFFF;
+    bottom: 0;
+    left: -8px;
+}
+
+.card-two {
+    background: rgb(255 255 255 / 40%);
+    margin-bottom: 20px;
+    position: absolute;
+    right: 300px;
+    width: 250px;
+    padding: 10px 20px;
+    height: 135px;
+    top: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-two:last-child .side-line {
+    position: absolute;
+    height: 70px;
+    width: 2px;
+    background-color: #FFFFFF;
+    right: -36px;
+    top: 20px;
+    transform: rotate(-90deg);
+}
