@@ -19,25 +19,41 @@
                 <div class="nav-logo">
                     <img src="./assets/white-logo.png" alt="">
                 </div>
-                <div class="nav-menubar">
-                    <ul class="menu-list">
-                        <li class="nav-links">About Us</li>
-                        <li class="nav-links">Benefits</li>
-                        <li class="nav-links">Projects</li>
-                        <li class="nav-links">stages</li>
-                        <li class="nav-links">Services</li>
-                        <li class="nav-links">
-                            <div class="nav-contact">
-                                <div class="call-logo"><i class="fa-solid fa-phone-volume"></i></div>
-                                <div class="call-info">
-                                    <p>Call Us</p>
-                                    <p>
-                                        +38 (097) 654 54 34
-                                    </p>
+                <div class="desktop">
+
+
+                    <div class="nav-menubar ">
+                        <ul class="menu-list">
+                            <li class="nav-links">About Us</li>
+                            <li class="nav-links">Benefits</li>
+                            <li class="nav-links">Projects</li>
+                            <li class="nav-links">stages</li>
+                            <li class="nav-links">Services</li>
+                            <li class="nav-links">
+                                <div class="nav-contact">
+                                    <div class="call-logo"><i class="fa-solid fa-phone-volume"></i></div>
+                                    <div class="call-info">
+                                        <p>Call Us</p>
+                                        <p>
+                                            +38 (097) 654 54 34
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mobile">
+                    <div id="menu-open" class="cur-pointer z-99999 " onclick="openNav();">
+                        <img loading="lazy" style="height: 30px; width: 30px;"
+                            src="https://cdn.playerzpot.com/images/hamburger-menu.png" alt="Play fantasy games online">
+                    </div>
+                    <div id="menu-close" style="display: none; cursor: pointer;"
+                        class="d-none cur-pointer menu-close z-99999">
+                        <img loading="lazy" onclick="closeNav()" style="height: 25px; width: 25px;"
+                            src="https://cdn.playerzpot.com/images/cancel-menu.png" alt="Play fantasy games online">
+                    </div>
                 </div>
             </div>
 
@@ -68,7 +84,7 @@
                         </div>
                         <div class="card-infodiv">
                             We Create Your Space better <Br> based on your own idea
-                        </div>  
+                        </div>
                         <div class="side-line">
                             <span class="circle"></span>
                         </div>
@@ -80,6 +96,54 @@
     </div>
 
 
+    <div id="mySidenavMenu" class="sidenavMenu mobile" style="right: -1000px;">
+        <div class="mob-menus">
+            <div>
+                Home
+            </div>
+            <div>
+                About Us
+            </div>
+            <div>
+                Pages
+            </div>
+            <div>
+                Agent
+            </div>
+            <div>
+                Blogs
+            </div>
+            <div>
+                Subscribe
+            </div>
+            <div>
+                <button class="signin-btn">SIGN IN</button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenavMenu").style.right = "0px";
+            document.getElementById("menu-open").style.display = "none";
+            document.getElementById("menu-close").style.display = "block";
+            document.body.style.overflow = "hidden";
+
+            // var bodyScroll = document.getElementsByClassName("bodyClass");
+            // bodyScroll.classList.add("asdasd");
+        }
+
+        function closeNav() {
+            // alert('asda');
+            document.getElementById("mySidenavMenu").style.right = "-1000px";
+            document.getElementById("menu-open").style.display = "block";
+            document.getElementById("menu-close").style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+    </script>
 
 </body>
 

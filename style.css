@@ -13,7 +13,7 @@
     background-size: 100% 100%;
 }
 .container {
-    width: 1280px;
+    max-width: 1280px;
     /* height: 100vh; */
     margin: 0 auto;
     /* background: blue; */
@@ -173,4 +173,85 @@ h1.hero-title {
     right: -36px;
     top: 20px;
     transform: rotate(-90deg);
+}
+
+
+.mobile{
+    display: none;
+}
+.desktop{
+    display: block;
+}
+
+
+.sidenavMenu {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 80px;
+    right: -1000px;
+    background: linear-gradient(to left,#01233C,#b1bbc3);
+    overflow-x: hidden;
+    transition: .8s;
+
+}
+
+.mob-menus div {
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+}
+
+button.signin-btn {
+    background: rgb(255 255 255 / 40%);
+    font-size: 20px;
+    padding: 10px 40px;
+    color: #fff;
+    border-radius: 10px;
+    border: none
+}
+
+
+@media  (max-width: 1100px) {
+    
+    .mobile{
+        display: block!important;
+    }
+    .desktop{
+        display: none!important;
+    }
+    .hero-rightdiv{
+        width: 100%;
+    }
+
+    h1.hero-title {
+        font-size: 45px!important;
+        margin-top: 0!important;
+    }
+
+    .card-one{
+        top: 0px!important;
+    }
+
+    .card-two{
+        top:150px!important;
+        left: 0;
+    }
+
+    .learn-morebtn{
+        font-size:20px!important;
+    }
+
+    .heroleft-div {
+        width: 100%;
+    }
+    
+
+    .herosection-div{
+        flex-direction: column!important;
+        margin-top: 0!important;
+    }
 }
